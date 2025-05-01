@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Mapa Interativo com Shapefile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/150x40?text=Logo" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contêiner do Mapa -->
+    <section id="secHome">
+        <h1>Áreas contaminadas do estado de São Paulo</h1>
+        <p>Explore os dados geográficos de forma interativa.</p>
+            
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div class="map-description">
+            <h2>Importância Técnica do Mapa</h2>
+            <p>Este mapa apresenta a distribuição das <strong>áreas contaminadas</strong> no estado de São Paulo com base nos limites de cada município. Ele é uma ferramenta essencial para:</p>
+            <ul>
+              <li><strong>Gestão ambiental:</strong> permite monitorar locais impactados por substâncias perigosas e acompanhar ações de remediação.</li>
+              <li><strong>Planejamento urbano:</strong> orienta o uso do solo e evita a ocupação indevida de áreas de risco.</li>
+              <li><strong>Classificação de risco:</strong> categoriza áreas como "em remediação", "reabilitadas para uso", ou "com risco confirmado".</li>
+              <li><strong>Transparência pública:</strong> fornece dados sobre endereço, atividade realizada e classificação da contaminação.</li>
+              <li><strong>Tomada de decisão:</strong> contribui com gestores públicos e técnicos na formulação de políticas regionais baseadas em evidências geográficas.</li>
+              <li><strong>Saúde pública:</strong> identifica áreas que podem representar risco à população, permitindo ações preventivas.</li>
+            </ul>
+            <p>Além disso, cada município é identificado com seu nome, sigla da UF e área total, facilitando análises comparativas e integradas.</p>
+          </div>
+    </section>
+
+  <!-- Bibliotecas necessárias para trabalhar com MAPAS e SHAPFILE -->
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- JSZip -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <!-- shp.js -->
+  <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
+
+  <!-- Script do mapa -->
+  <script src="mapa.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Estilo para o menu de navegação */
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #secHome {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #secHome h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #secHome p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+  /* Estilo para o logo */
+  .logo-container {
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo-container img {
+    height: 40px; /* Tamanho do logo */
+  }
+
+  /* Estilo para o mapa */
+  #map-container {
+    width: 80VH;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px black;
+    margin: 10px auto; /* Centraliza o mapa na tela */
+  }
+
+  #map {
+    width: 100%; /* Largura do mapa, pode ajustar conforme necessário */
+    height: 100%;
+    border-radius: 20px; /* Bordas arredondadas */
+  }
+
+
+  /* alterando a cor e fundo da legenda do mapa */
+
+  .info.legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+  }
+  .info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+  }
